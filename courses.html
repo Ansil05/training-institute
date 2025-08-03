@@ -1,86 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Training Institute - Courses</title>
-    <meta name="description" content="Explore our list of IT courses including Web Development, Data Science, Cybersecurity, and more.">
-    <meta name="robots" content="index,follow">
-     <!--prevent the duplicate content isuue by definig the url-->
-    <link rel="canonical" href="http://127.0.0.1:5500/index.html">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IT Training Institute - Courses</title>
+  <meta name="description" content="Explore our list of IT courses including Web Development, Data Science, Cybersecurity, and more."/>
+  <meta name="robots" content="index,follow"/>
+  <link rel="canonical" href="https://www.yourdomain.com/courses.html"/>
 
-     <!---open graph tag enhance appearence when shared on the social ,media-->
-    <meta property="og:title" content="It Training Institute-COURSES">
-    <meta property="og:description" content="We provide a wide varites of courses">
+  <!-- Open Graph -->
+  <meta property="og:title" content="IT Training Institute - Courses"/>
+  <meta property="og:description" content="We provide a wide variety of industry-relevant courses."/>
+  <meta name="geo.region" content="IN-KL"/>
+  <meta name="geo.placename" content="Trivandrum"/>
 
-     <!---location optional-->
-    <meta name="geo.region" content="IN-KL">
-    <meta name="geo.placename" content="Trivandrum">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; }
-        header, footer { background: #333; color: #ffffff; padding: 1rem; text-align: center; }
-        nav { background: #444; padding: 0.5rem; }
-        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; }
-        nav ul li { margin: 0 1rem; }
-        nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
-        main { padding: 2rem; max-width: 960px; margin: auto; }
-        article { border: 1px solid #ccc; padding: 1rem; margin-bottom: 2rem; border-radius: 8px; }
-        h1, h2 { color: #5a5a5a; }
-        article h3 { color: #007bff; }
-    </style>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+
+  <!-- Custom Fonts -->
+  <link href="customfont/customfont.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    header {
+          background: url('images/graduation.jpg') center center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem;
+      background-color: rgba(0,0,0,0.7);
+      background-blend-mode: overlay ;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    h2 {
+      color: #0d6efd;
+      font-weight: 700;
+      margin-top: 2rem;
+    }
+
+    /*nav {
+      background-color: #343a40;
+    }
+
+    nav a {
+      color: #fff !important;
+      font-weight: bold;
+    }*/
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card:hover {
+      box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+      transform: translateY(-3px);
+      transition: all 0.3s ease;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>IT Training Institute</h1>
-    </header>
+  <!-- Header -->
+  <header>
+    <h1>IT Training Institute</h1>
+    <p>Your gateway to a career in technology</p>
+  </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="contact.html">Contact</a></li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">IT Institute</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <main>
-        <section>
-            <h2>Our Courses</h2>
-            <p>We offer a wide range of courses designed to give you the skills for a successful IT career. Below are some of our popular programs:</p>
-            
-            <article id="web-development">
-                <h3>Web Development Fundamentals</h3>
-                <p>Learn the core technologies of the web: HTML5, CSS3, and JavaScript. This course is perfect for beginners and aspiring front-end developers.</p>
-                <aside>
-                    <p><strong>Duration:</strong> 12 Weeks</p>
-                    <p><strong>Prerequisites:</strong> None</p>
-                </aside>
-            </article>
+  <!-- Main Content -->
+  <main class="container my-5">
+    <h2 class="mb-4 text-center text-primary">Our Courses</h2>
+    <p class="text-center mb-5">We offer a wide range of in-demand IT courses designed to help you succeed in your tech career.</p>
 
-            <article id="data-science">
-                <h3>Introduction to Data Science</h3>
-                <p>Discover the world of data with Python, machine learning, and data visualization tools. A great start for a career in data analysis or AI.</p>
-                <aside>
-                    <p><strong>Duration:</strong> 16 Weeks</p>
-                    <p><strong>Prerequisites:</strong> Basic programming knowledge</p>
-                </aside>
-            </article>
+    <div class="row g-4">
+      <!-- Web Development -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/Web-development.webp" class="card-img-top" alt="Web Development Course">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Web Development Fundamentals</h5>
+            <p class="card-text">Learn HTML5, CSS3, and JavaScript to build interactive websites. Ideal for beginners starting their tech journey.</p>
+          </div>
+          <div class="card-footer bg-light">
+            <small><strong>Duration:</strong> 12 Weeks<br>
+            <strong>Prerequisites:</strong> None</small>
+          </div>
+        </div>
+      </div>
 
-            <article id="cybersecurity">
-                <h3>Cybersecurity Essentials</h3>
-                <p>Understand the principles of network security, ethical hacking, and protecting digital assets. Learn to identify and mitigate cyber threats.</p>
-                <aside>
-                    <p><strong>Duration:</strong> 10 Weeks</p>
-                    <p><strong>Prerequisites:</strong> Familiarity with networking concepts</p>
-                </aside>
-            </article>
-        </section>
-    </main>
+      <!-- Data Science -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/Data-Science.webp" class="card-img-top" alt="Data Science Course">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Introduction to Data Science</h5>
+            <p class="card-text">Explore Python programming, machine learning, and data visualization. Build a solid foundation in AI & analytics.</p>
+          </div>
+          <div class="card-footer bg-light">
+            <small><strong>Duration:</strong> 16 Weeks<br>
+            <strong>Prerequisites:</strong> Basic programming knowledge</small>
+          </div>
+        </div>
+      </div>
 
-    <footer>
-        <p>&copy; 2024 IT Training Institute. All rights reserved.</p>
-    </footer>
+      <!-- Cybersecurity -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/cyber-security.webp" class="card-img-top" alt="Cybersecurity Course">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Cybersecurity Essentials</h5>
+            <p class="card-text">Understand network security, ethical hacking, and cyber threat protection. Prepare for a career in cyber defense.</p>
+          </div>
+          <div class="card-footer bg-light">
+            <small><strong>Duration:</strong> 10 Weeks<br>
+            <strong>Prerequisites:</strong> Familiarity with networking</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 IT Training Institute. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
